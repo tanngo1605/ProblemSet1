@@ -1,0 +1,27 @@
+function naiveSol (nums){
+    result = [];
+    for( let i = 0;i<nums.length;i++){
+    var pro = 1;
+        for (let j = 0; j< nums.length; j++){
+            if (i!= j) pro = pro * nums[j];}
+        result.push(pro);}
+return result;
+}
+
+
+
+
+
+
+function divisionSol (nums) // multiply all the elements and divide element[i]
+
+
+{ var product = 1;
+ for (let i = 0 ;i< nums.length;i++){
+     product *= nums[i];}
+ var result =[];
+ for (let i =0 ; i<nums.length;i++ ){
+     result.push(product/nums[i]);
+ }
+return result;
+}
