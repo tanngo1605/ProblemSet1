@@ -1,0 +1,8 @@
+function twoSum (nums, target){
+    var compliment = [];
+    for (let i =0;i<nums.length;i++){
+        if (compliment.includes(target - nums[i])) return true;
+        compliment.push(nums[i]);
+    }
+    return     false;
+}
